@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "work/south-sudan-climate.html",
+    "href": "work/south-sudan-climate.html",
+    "title": "Flood and drought monitoring from satellite data",
+    "section": "",
+    "text": "My roleBuilt and ran the system for more than two years\n  CoverageSouth Sudan and several East African countries\n  DataCHIRPS rainfall · NDVI · classified satellite flood extent\n  ToolsGoogle Earth Engine (Python) · R · ArcGIS"
+  },
+  {
+    "objectID": "work/south-sudan-climate.html#the-challenge",
+    "href": "work/south-sudan-climate.html#the-challenge",
+    "title": "Flood and drought monitoring from satellite data",
+    "section": "The challenge",
+    "text": "The challenge\nSouth Sudan had successive years of severe flooding from 2019 to 2021, with drought in other parts of the country. Much of the affected area was hard to reach on the ground, and partners needed regular, consistent information on where flooding and drought were happening and where they were likely to strike again."
+  },
+  {
+    "objectID": "work/south-sudan-climate.html#what-i-did",
+    "href": "work/south-sudan-climate.html#what-i-did",
+    "title": "Flood and drought monitoring from satellite data",
+    "section": "What I did",
+    "text": "What I did\n\nBuilt the monitoring: a system in Google Earth Engine, written in Python, combining CHIRPS rainfall, NDVI vegetation data and satellite flood extent mapped by image classification.\nRan it every month for more than two years, across South Sudan and several East African countries.\nTurned it into products: monthly data, quarterly factsheets, a dashboard, and static and story maps.\nChecked it on the ground: led three field assessments after extreme floods, verifying the flood mapping and documenting impacts on livelihoods."
+  },
+  {
+    "objectID": "work/south-sudan-climate.html#outcome",
+    "href": "work/south-sudan-climate.html#outcome",
+    "title": "Flood and drought monitoring from satellite data",
+    "section": "Outcome",
+    "text": "Outcome\n\nUsed by OCHA, the clusters and partners, and fed the mission’s wider shocks monitoring.\nEarly-warning reports on long-term flood trends identified areas likely to flood again.\n\n\n\n\nRainfall, vegetation and flood extent were processed each month in Google Earth Engine and turned into data, factsheets, a dashboard and maps."
+  },
+  {
+    "objectID": "work/south-sudan-climate.html#published-examples",
+    "href": "work/south-sudan-climate.html#published-examples",
+    "title": "Flood and drought monitoring from satellite data",
+    "section": "Published examples",
+    "text": "Published examples\n\n  Flood frequency, 2019–2021Map · January 2022\n  Drought severity, Eastern EquatoriaMap · January 2022\n  Flood exposure and infrastructure, Bentiu and RubkonaMap · 2022\n  Climate impact and displacement, Northern Bahr el GhazalProfile · March 2021\n\nAn open-data rebuild of this monitoring is in progress and will be added to the Work page.\n\n  ← Previous case study\n  All work →"
+  },
+  {
+    "objectID": "work/index.html",
+    "href": "work/index.html",
+    "title": "Work",
+    "section": "",
+    "text": "Case studies, maps, reports, dashboards and code. Most items were published by IMPACT Initiatives (REACH) and FAO as team work; I produced or contributed to each.\n\n  All\n  Case studies\n  Maps\n  Reports\n  Dashboards\n  Code\n\n\n\n\n\n\n\n\n\n\n\n\nA 32,000-household needs assessment under access constraints\n\n\nIMPACT Initiatives (REACH) · Nigeria · 2026\n\n\n\nCase study\n\n\n\nSampling, daily monitoring and automated cleaning for the 2026 northern Nigeria MSNA, with 20+ partners.\n\n\n\n\n\n\n\n\n\n\n\n\nFlood and drought monitoring from satellite data\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2020–22\n\n\n\nCase study\n\n\n\nA Google Earth Engine monitoring system run for more than two years and checked on the ground.\n\n\n\n\n\n\n\n\n\n\n\n\nSurvey monitoring dashboard (public demo)\n\n\nPublic demo · Nigeria · 2026\n\n\n\nDashboard\n\n\n\nThe dashboard used on the 2026 Nigeria MSNA, running on synthetic data. R Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\nPathways towards lower emissions\n\n\nFAO · Global · 2023\n\n\n\nReport\n\n\n\nFAO’s global assessment of livestock emissions and mitigation options. I contributed GLEAM emissions analysis.\n\n\n\n\n\n\n\n\n\n\n\n\nGLEAM public dashboard\n\n\nFAO · Global · 2023–24\n\n\n\nDashboard\n\n\n\nFAO’s public dashboard of livestock emissions results, which I built in R Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\nFlood frequency, 2019–2021\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nMap\n\n\n\nHow often each area flooded in 2019, 2020 and 2021. Shocks Monitoring Index.\n\n\n\n\n\n\n\n\n\n\n\n\nDrought severity, Eastern Equatoria\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nMap\n\n\n\nDrought severity mapping for Eastern Equatoria. Shocks Monitoring Index.\n\n\n\n\n\n\n\n\n\n\n\n\nFlood exposure and infrastructure, Bentiu and Rubkona\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nMap\n\n\n\nFlood exposure of infrastructure in Bentiu and Rubkona, 2019–2022.\n\n\n\n\n\n\n\n\n\n\n\n\nClimate impact and displacement, Northern Bahr el Ghazal\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2021\n\n\n\nReport\n\n\n\nProfile of climate impacts and displacement in Northern Bahr el Ghazal.\n\n\n\n\n\n\n\n\n\n\n\n\nSouth Sudan country reference map\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2021\n\n\n\nMap\n\n\n\nThe mission’s A0 country reference map.\n\n\n\n\n\n\n\n\n\n\n\n\nWASH infrastructure, Ikotos Town\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2021\n\n\n\nMap\n\n\n\nWater, sanitation and hygiene infrastructure in Ikotos Town, mapped by type.\n\n\n\n\n\n\n\n\n\n\n\n\nInter-sectoral vulnerabilities in Juba City\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2020\n\n\n\nMap\n\n\n\nParticipatory mapping of inter-sectoral vulnerabilities across Juba City.\n\n\n\n\n\n\n\n\n\n\n\n\nHard-to-reach areas: food security and livelihoods\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nReport\n\n\n\nMonthly food security and livelihoods factsheet for hard-to-reach areas.\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation movement, Akobo\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nReport\n\n\n\nArrivals, departures and cross-border returns from port and road monitoring.\n\n\n\n\n\n\n\n\n\n\n\n\nJoint Market Monitoring Initiative\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2022\n\n\n\nReport\n\n\n\nMonthly prices and market functionality across South Sudan.\n\n\n\n\n\n\n\n\n\n\n\n\nRapid needs assessment, Canal/Pigi\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2021\n\n\n\nReport\n\n\n\nA rapid multi-sector assessment brief.\n\n\n\n\n\n\n\n\n\n\n\n\nRapid market assessment, Raja\n\n\nIMPACT Initiatives (REACH) · South Sudan · 2021\n\n\n\nReport\n\n\n\nRapid assessment of markets in Raja.\n\n\n\n\n\n\n\n\n\n\n\n\nArea of Knowledge multi-sector assessment\n\n\nIMPACT Initiatives (REACH) · South Sudan\n\n\n\nReport\n\n\n\nSettlement-level needs in hard-to-reach areas from key informants.\n\n\n\n\n\n\n\n\n\n\n\n\nJMMI dashboard\n\n\nIMPACT Initiatives (REACH) · South Sudan\n\n\n\nDashboard\n\n\n\nMarket monitoring dashboard for South Sudan. R Shiny.\n\n\n\n\n\n\n\n\n\n\n\n\nIntegrated Needs Tracking dashboard\n\n\nIMPACT Initiatives (REACH) · South Sudan\n\n\n\nDashboard\n\n\n\nMulti-sector needs tracking for South Sudan. Tableau.\n\n\n\n\n\n\n\n\n\n\n\n\nmsna-pipeline\n\n\nGitHub · 2026\n\n\n\nCode\n\n\n\nHow the MSNA stages fit together, and how the public versions are built and checked.\n\n\n\n\n\n\n\n\n\n\n\n\nmsna-sampling\n\n\nGitHub · 2026\n\n\n\nCode\n\n\n\nTwo-stage cluster sampling with resampling when clusters are unreachable.\n\n\n\n\n\n\n\n\n\n\n\n\nmsna-monitoring\n\n\nGitHub · 2026\n\n\n\nCode\n\n\n\nField monitoring, cleaning checks with planted errors, and a Shiny dashboard.\n\n\n\n\n\n\n\n\n\n\n\n\nmethane-s5p-explorer\n\n\nGitHub · 2026 · in progress\n\n\n\nCode\n\n\n\nExploring Sentinel-5P methane over Turkmenistan with Earth Engine. In progress.\n\n\n\n\n\n\n\n\n\n\n\n\nsouth-sudan-aok-pipeline\n\n\nGitHub · IMPACT Initiatives (REACH) · 2020\n\n\n\nCode\n\n\n\nThe Area of Knowledge data pipeline as at 2020, which I then ran for two years.\n\n\n\n\n\nNo matching items\n\n\nWork for ICRC and for the current Nigeria assessment is internal or not yet published; the Nigeria case study and the public code show how it was done. Code is built with AI-assisted development, reviewed and tested by me."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Presenting the GLEAM dashboard at FAO's World Food Forum, Rome, 2023\nI’m a humanitarian researcher and GIS and data specialist. Over seven years with IMPACT Initiatives (REACH), ICRC and FAO, I’ve worked on needs assessments, displacement and market monitoring, climate and remote sensing, and emissions modelling, across sectors from food security and water and sanitation to protection and education.\nI started with IMPACT Initiatives (REACH) in Ukraine and then South Sudan, where over three years I went from Junior GIS Officer to GIS Specialist. There I managed a team of six, ran a satellite-based climate monitoring system, and worked with South Sudan’s National Bureau of Statistics on the national FSNMS household survey. At FAO in Rome I analysed livestock emissions with GLEAM and designed a geospatial data warehouse on Google Cloud. At ICRC in Ukraine I was the delegation’s GIS and data focal point, using remote sensing in ArcGIS Pro and Google Earth Engine to monitor floods, crops and critical sites near the frontline, and managed a team of three. I’m now a Senior Research Officer with IMPACT Initiatives (REACH), leading the 2026 needs assessment for northern Nigeria from Dakar."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\n  2017 – 2018MSc Geographic Information Science (Merit)University College London (UCL)\n  2013 – 2016BSc Physical GeographySwansea University"
+  },
+  {
+    "objectID": "about.html#languages",
+    "href": "about.html#languages",
+    "title": "About",
+    "section": "Languages",
+    "text": "Languages\nEnglish (native) · Spanish (basic, currently studying) · French (beginner, currently studying)"
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About",
+    "section": "Get in touch",
+    "text": "Get in touch\nLinkedIn is the best way to reach me.\n\n   Message me on LinkedIn\n   Download CV (PDF)\n   GitHub"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jack Philpott",
+    "section": "",
+    "text": "Presenting the GLEAM dashboard at FAO’s World Food Forum, Rome, 2023\n\n\n\n\n\n\nGIS and data specialist · Humanitarian research\n\n\nJack Philpott\n\nI design and run the data behind humanitarian decisions: household surveys, geospatial analysis and remote sensing.\n\nSeven years with IMPACT Initiatives (REACH), ICRC and FAO, in Nigeria, Ukraine, South Sudan and on global programmes. I’m currently a Senior Research Officer with IMPACT Initiatives (REACH), leading the 2026 needs assessment for northern Nigeria from Dakar.\n\n   Download CV (PDF)\n   See my work\n   LinkedIn\n   GitHub\n\n\n\n\n\n  Experience7 years in humanitarian research, data and GIS\n  OrganisationsIMPACT Initiatives (REACH) · ICRC · FAO\n  CountriesNigeria · Senegal · Ukraine · South Sudan · Italy\n  LanguagesEnglish (native) · Spanish (basic) · French (beginner)\n\n\n\n  Selected work\n  All work →\n\n\n\n  \n    \n      \n    \n    \n      Household survey · Nigeria · 2026\n      A 32,000-household needs assessment under access constraints\n      Sampling, daily monitoring and automated cleaning, with more than 20 partner organisations.\n      Case studyDashboard demo\n    \n  \n\n  \n    \n      \n    \n    \n      Remote sensing · South Sudan · 2020–22\n      Flood and drought monitoring from satellite data\n      A Google Earth Engine system run for more than two years and checked on the ground after extreme floods.\n      Case study\n    \n  \n\n  \n    \n      \n    \n    \n      Emissions modelling · FAO · 2023–24\n      Livestock emissions and mitigation with GLEAM\n      Country, regional and global emissions analysis, including methane, and the public GLEAM dashboard.\n      FAO reportDashboard\n    \n  \n\n\n\n  Experience\n  Full CV (PDF) →\n\n\n  2026 – nowSenior Research Officer, IMPACT Initiatives (REACH)Nigeria mission, based in Dakar, Senegal\n  2025 – 2026GIS & Data Specialist, International Committee of the Red Cross (ICRC)Kyiv, Ukraine\n  2023 – 2024Geospatial Analyst, Food and Agriculture Organization of the UN (FAO)Rome, Italy\n  2019 – 2022Junior GIS Officer to GIS Specialist, IMPACT Initiatives (REACH)Juba, South Sudan\n  2018 – 2019GIS Intern, IMPACT Initiatives (REACH)Kyiv, Ukraine\n\n\nSkills\n\n  \n    Research and surveys\n    Needs assessments (MSNA)Sampling designQuestionnaire designKoboToolboxData quality assuranceIPC and Cadre Harmonisé\n  \n  \n    Data and code\n    R (primary)PythonSQLPostgreSQL and PostGISGoogle BigQueryGit\n  \n  \n    GIS and remote sensing\n    ArcGIS ProQGISGoogle Earth EngineFMESatellite image classification\n  \n  \n    Dashboards and maps\n    R ShinyPower BITableauArcGIS Dashboards and StoryMapsCartographic design\n  \n  \n    Ways of working\n    Team leadershipPartner coordinationTrainingAI-assisted development\n  \n  \n    Education\n    MSc Geographic Information Science (Merit), UCL, 2018BSc Physical Geography, Swansea University, 2016"
+  },
+  {
+    "objectID": "work/nigeria-msna.html",
+    "href": "work/nigeria-msna.html",
+    "title": "A 32,000-household needs assessment under access constraints",
+    "section": "",
+    "text": "My roleResearch lead for the assessment; led and supported a team of three\n  Scale32,000 households · 11 states · 176 LGAs\n  Partners20+ organisations · up to 1,000 interviews a day\n  ToolsR · Python · KoboToolbox · R Shiny"
+  },
+  {
+    "objectID": "work/nigeria-msna.html#the-challenge",
+    "href": "work/nigeria-msna.html#the-challenge",
+    "title": "A 32,000-household needs assessment under access constraints",
+    "section": "The challenge",
+    "text": "The challenge\nA Multi-Sector Needs Assessment (MSNA) is a large household survey whose findings help decide where humanitarian aid goes. In 2026 the northern Nigeria MSNA had to reach displaced people, refugees and host communities across 11 states, where insecurity put large areas out of reach, with more than 20 partners collecting up to 1,000 interviews a day."
+  },
+  {
+    "objectID": "work/nigeria-msna.html#what-i-did",
+    "href": "work/nigeria-msna.html#what-i-did",
+    "title": "A 32,000-household needs assessment under access constraints",
+    "section": "What I did",
+    "text": "What I did\n\nSampling: designed a two-stage cluster sample that kept coverage despite insecurity, and a resampling process that replaced unreachable clusters during fieldwork without breaking the design.\nMonitoring and cleaning: built an automated R and Python system that checked up to 1,000 submissions a day, with cleaning logs, a follow-up list for each partner and a live progress dashboard.\nCoordination: coordinated data collection with more than 20 partners and worked with Nigeria’s National Bureau of Statistics.\nThe full cycle: took the assessment from secondary data review and methodology to analysis and reporting."
+  },
+  {
+    "objectID": "work/nigeria-msna.html#outcome",
+    "href": "work/nigeria-msna.html#outcome",
+    "title": "A 32,000-household needs assessment under access constraints",
+    "section": "Outcome",
+    "text": "Outcome\n\nFindings presented to Nigeria’s Cadre Harmonisé food security analysis, and being presented to partners, donors, clusters and agency heads.\nEach stage rebuilt as a public, runnable repository on synthetic data, so the methods can be seen without exposing survey data.\n\n\n\n\nThe monitoring dashboard’s progress page, as used on the real survey, running on synthetic data.\n\n\n\n\n\n\nThe sample after two rounds of resampling: sampled, replacement and inaccessible clusters. Synthetic data, not real findings.\n\n\n\n\n\n\n\nThe sample after two rounds of resampling: sampled, replacement and inaccessible clusters. Synthetic data, not real findings."
+  },
+  {
+    "objectID": "work/nigeria-msna.html#links",
+    "href": "work/nigeria-msna.html#links",
+    "title": "A 32,000-household needs assessment under access constraints",
+    "section": "Links",
+    "text": "Links\n\nLive dashboard demo (synthetic data)\nmsna-pipeline: how the stages fit together\nmsna-sampling: sampling and resampling\nmsna-monitoring: monitoring, cleaning and the dashboard\n\n\n  ← All work\n  Next case study: flood and drought monitoring →"
+  }
+]
