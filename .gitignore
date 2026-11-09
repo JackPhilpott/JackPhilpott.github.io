@@ -1,0 +1,11 @@
+/.quarto/
+/_site/
+.DS_Store
+*_files/
+
+**/*.quarto_ipynb
+
+# Local tooling and secrets (never committed)
+.venv/
+.env
+__pycache__/

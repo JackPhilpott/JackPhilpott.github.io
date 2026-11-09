@@ -1,0 +1,200 @@
+- title: A 32,000-household needs assessment under access constraints
+  subtitle: IMPACT Initiatives (REACH) · Nigeria · 2026
+  description: Sampling, daily monitoring and automated cleaning for the 2026 northern Nigeria MSNA, with 20+ partners.
+  categories:
+  - Case study
+  path: nigeria-msna.qmd
+  image: ../images/thumbs/nigeria-msna.webp
+  image-alt: ''
+- title: Flood and drought monitoring from satellite data
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2020–22
+  description: A Google Earth Engine monitoring system run for more than two years and checked on the ground.
+  categories:
+  - Case study
+  path: south-sudan-climate.qmd
+  image: ../images/thumbs/south-sudan-climate.webp
+  image-alt: ''
+- title: Survey monitoring dashboard (public demo)
+  subtitle: Public demo · Nigeria · 2026
+  description: The dashboard used on the 2026 Nigeria MSNA, running on synthetic data. R Shiny.
+  categories:
+  - Dashboard
+  path: https://jackphilpott.shinyapps.io/msna-monitoring/
+  image: ../images/thumbs/msna-dashboard.webp
+  image-alt: ''
+- title: Pathways towards lower emissions
+  subtitle: FAO · Global · 2023
+  description: FAO's global assessment of livestock emissions and mitigation options. I contributed GLEAM emissions analysis.
+  categories:
+  - Report
+  path: https://openknowledge.fao.org/items/b3f21d6d-bd6d-4e66-b8ca-63ce376560b5
+  image: ../images/thumbs/fao-pathways.webp
+  image-alt: ''
+- title: GLEAM public dashboard
+  subtitle: FAO · Global · 2023–24
+  description: FAO's public dashboard of livestock emissions results, which I built in R Shiny.
+  categories:
+  - Dashboard
+  path: https://foodandagricultureorganization.shinyapps.io/GLEAMV3_Public/
+  image: ../images/thumbs/gleam-dashboard.webp
+  image-alt: ''
+- title: Flood frequency, 2019–2021
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: How often each area flooded in 2019, 2020 and 2021. Shocks Monitoring Index.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/c24a7620/REACH_SSD_Map_SMI_FloodFrequency2019_20_21_31JAN2022_A4-2.pdf
+  image: ../images/thumbs/smi-flood-frequency.webp
+  image-alt: ''
+- title: Drought severity, Eastern Equatoria
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: Drought severity mapping for Eastern Equatoria. Shocks Monitoring Index.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/7deca445/REACH_SSD_Map_SMI_Eastern_Equatoria_Drought_JAN2022_A4.pdf
+  image: ../images/thumbs/smi-drought.webp
+  image-alt: ''
+- title: Flood exposure and infrastructure, Bentiu and Rubkona
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: Flood exposure of infrastructure in Bentiu and Rubkona, 2019–2022.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/13389b24/REACH_SSD_Map_Flood_Exposure_Bentiu_Rubkona_2019_2022.pdf
+  image: ../images/thumbs/flood-exposure-bentiu.webp
+  image-alt: ''
+- title: Climate impact and displacement, Northern Bahr el Ghazal
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2021
+  description: Profile of climate impacts and displacement in Northern Bahr el Ghazal.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/3343d281/REACH_SSD_Profile_NBeG-Climate-Impact-Displacement_26Mar2021.pdf
+  image: ../images/thumbs/nbeg-profile.webp
+  image-alt: ''
+- title: South Sudan country reference map
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2021
+  description: The mission's A0 country reference map.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/d1fd7034/REACH_SSD_CountryRefMap_April2021_A0L.pdf
+  image: ../images/thumbs/country-ref-map.webp
+  image-alt: ''
+- title: WASH infrastructure, Ikotos Town
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2021
+  description: Water, sanitation and hygiene infrastructure in Ikotos Town, mapped by type.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/b6d0315b/REACH_SSD_WASH_Infra-IkotosTown_Infrastructure-Tyeps_November2021.pdf
+  image: ../images/thumbs/ikotos-wash.webp
+  image-alt: ''
+- title: Inter-sectoral vulnerabilities in Juba City
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2020
+  description: Participatory mapping of inter-sectoral vulnerabilities across Juba City.
+  categories:
+  - Map
+  path: https://repository.impact-initiatives.org/document/impact/1a683778/REACH_SSD_Map_AoK_Juba_City_Inter-Sectoral_Vulnerabilities_Participatory_05MAY2020_A2.pdf
+  image: ../images/thumbs/juba-participatory.webp
+  image-alt: ''
+- title: 'Hard-to-reach areas: food security and livelihoods'
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: Monthly food security and livelihoods factsheet for hard-to-reach areas.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/aea48452/REACH_SSD_Factsheet_Assessment-of-Hard-to-Reach-Areas-FSL_May2022-1.pdf
+  image: ../images/thumbs/htr-fsl.webp
+  image-alt: ''
+- title: Population movement, Akobo
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: Arrivals, departures and cross-border returns from port and road monitoring.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/f8a1e920/REACH_SDD_Factsheet_Akobo_PRM_May-2022.pdf
+  image: ../images/thumbs/prm-akobo.webp
+  image-alt: ''
+- title: Joint Market Monitoring Initiative
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2022
+  description: Monthly prices and market functionality across South Sudan.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/0aeaed59/SSD_JMMI_Factsheet_February_2022.pdf
+  image: ../images/thumbs/jmmi-factsheet.webp
+  image-alt: ''
+- title: Rapid needs assessment, Canal/Pigi
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2021
+  description: A rapid multi-sector assessment brief.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/1853a2e8/REACH_SSD_Brief_Rapid_Assessment_Canal-Pigi_Oct2021.pdf
+  image: ../images/thumbs/canal-pigi.webp
+  image-alt: ''
+- title: Rapid market assessment, Raja
+  subtitle: IMPACT Initiatives (REACH) · South Sudan · 2021
+  description: Rapid assessment of markets in Raja.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/defd2bf3/REACH_SSD_Raja_Rapid-Market-Assessment_Aug2021_final.pdf
+  image: ../images/thumbs/raja-market.webp
+  image-alt: ''
+- title: Area of Knowledge multi-sector assessment
+  subtitle: IMPACT Initiatives (REACH) · South Sudan
+  description: Settlement-level needs in hard-to-reach areas from key informants.
+  categories:
+  - Report
+  path: https://repository.impact-initiatives.org/document/impact/96938933/AoKN-FINAL.pdf
+  image: ../images/thumbs/aok-assessment.webp
+  image-alt: ''
+- title: JMMI dashboard
+  subtitle: IMPACT Initiatives (REACH) · South Sudan
+  description: Market monitoring dashboard for South Sudan. R Shiny.
+  categories:
+  - Dashboard
+  path: https://dashboards.impact-initiatives.org/ssd/jmmi/
+  image: ../images/thumbs/jmmi-dashboard.webp
+  image-alt: ''
+- title: Integrated Needs Tracking dashboard
+  subtitle: IMPACT Initiatives (REACH) · South Sudan
+  description: Multi-sector needs tracking for South Sudan. Tableau.
+  categories:
+  - Dashboard
+  path: https://dashboards.impact-initiatives.org/ssd/ints/
+  image: ../images/thumbs/int-dashboard.webp
+  image-alt: ''
+- title: msna-pipeline
+  subtitle: GitHub · 2026
+  description: How the MSNA stages fit together, and how the public versions are built and checked.
+  categories:
+  - Code
+  path: https://github.com/JackPhilpott/msna-pipeline
+  image: ../images/thumbs/msna-pipeline.webp
+  image-alt: ''
+- title: msna-sampling
+  subtitle: GitHub · 2026
+  description: Two-stage cluster sampling with resampling when clusters are unreachable.
+  categories:
+  - Code
+  path: https://github.com/JackPhilpott/msna-sampling
+  image: ../images/thumbs/msna-sampling.webp
+  image-alt: ''
+- title: msna-monitoring
+  subtitle: GitHub · 2026
+  description: Field monitoring, cleaning checks with planted errors, and a Shiny dashboard.
+  categories:
+  - Code
+  path: https://github.com/JackPhilpott/msna-monitoring
+  image: ../images/thumbs/msna-monitoring.webp
+  image-alt: ''
+- title: methane-s5p-explorer
+  subtitle: GitHub · 2026 · in progress
+  description: Exploring Sentinel-5P methane over Turkmenistan with Earth Engine. In progress.
+  categories:
+  - Code
+  path: https://github.com/JackPhilpott/methane-s5p-explorer
+  image: ../images/thumbs/methane.webp
+  image-alt: ''
+- title: south-sudan-aok-pipeline
+  subtitle: GitHub · IMPACT Initiatives (REACH) · 2020
+  description: The Area of Knowledge data pipeline as at 2020, which I then ran for two years.
+  categories:
+  - Code
+  path: https://github.com/JackPhilpott/south-sudan-aok-pipeline
+  image: ../images/thumbs/aok-pipeline.webp
+  image-alt: ''

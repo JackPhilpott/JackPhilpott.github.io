@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - files/
+
+website:
+  title: "Jack Philpott"
+  description: "GIS and data specialist for humanitarian research: household surveys, geospatial analysis and remote sensing."
+  site-url: "https://jackphilpott.github.io"
+  favicon: images/favicon.svg
+  open-graph:
+    image: images/og_card.jpg
+  search: false
+  page-navigation: false
+  navbar:
+    title: "Jack Philpott"
+    left:
+      - href: work/index.qmd
+        text: "Work"
+      - href: about.qmd
+        text: "About"
+    right:
+      - text: "CV"
+        icon: file-earmark-arrow-down
+        href: files/CV_JackPhilpott.pdf
+      - icon: github
+        href: https://github.com/JackPhilpott
+        aria-label: "GitHub"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/jackphilpottgis/
+        aria-label: "LinkedIn"
+  page-footer:
+    left: "© 2026 Jack Philpott"
+    right:
+      - text: "LinkedIn"
+        href: https://www.linkedin.com/in/jackphilpottgis/
+      - text: "GitHub"
+        href: https://github.com/JackPhilpott
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/theme.scss]
+      dark: [cosmo, styles/theme.scss, styles/theme-dark.scss]
+    respect-user-color-scheme: true
+    lang: en-GB
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    anchor-sections: false
+    fig-cap-location: bottom

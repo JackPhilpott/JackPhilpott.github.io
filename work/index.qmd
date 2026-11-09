@@ -1,0 +1,51 @@
+---
+title: "Work"
+page-layout: full
+body-classes: page-work
+listing:
+  id: work
+  contents: items.yml
+  type: grid
+  sort: false
+  categories: unnumbered
+  fields: [image, title, subtitle, description, categories]
+  grid-columns: 3
+  image-height: 160px
+  image-lazy-loading: true
+  max-description-length: 160
+  filter-ui: false
+  sort-ui: false
+  page-size: 60
+---
+
+Case studies, maps, reports, dashboards and code. Most items were published by IMPACT Initiatives (REACH) and FAO as team work; I produced or contributed to each.
+
+```{=html}
+<div class="type-filter" role="group" aria-label="Filter work by type">
+  <button type="button" data-cat="" aria-pressed="true">All</button>
+  <button type="button" data-cat="Case study" aria-pressed="false">Case studies</button>
+  <button type="button" data-cat="Map" aria-pressed="false">Maps</button>
+  <button type="button" data-cat="Report" aria-pressed="false">Reports</button>
+  <button type="button" data-cat="Dashboard" aria-pressed="false">Dashboards</button>
+  <button type="button" data-cat="Code" aria-pressed="false">Code</button>
+</div>
+<script>
+(function () {
+  const buttons = Array.from(document.querySelectorAll('.type-filter button'));
+  const mark = (cat) => buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.cat === cat)));
+  buttons.forEach(b => b.addEventListener('click', () => {
+    const cat = b.dataset.cat;
+    if (window.quartoListingCategory) window.quartoListingCategory(btoa(encodeURIComponent(cat)));
+    mark(cat);
+  }));
+  // Reflect a category already in the address (e.g. work/#category=Map)
+  const m = decodeURIComponent(location.hash).match(/category=([^&]*)/);
+  if (m) mark(decodeURIComponent(m[1]));
+})();
+</script>
+```
+
+::: {#work}
+:::
+
+<p class="small-note">Work for ICRC and for the current Nigeria assessment is internal or not yet published; the Nigeria case study and the public code show how it was done. Code is built with AI-assisted development, reviewed and tested by me.</p>

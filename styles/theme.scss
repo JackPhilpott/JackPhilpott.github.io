@@ -1,0 +1,378 @@
+/*-- scss:defaults --*/
+// Layout: one reading column (about 70ch) with wider bands for the home page cards.
+// Colour: the CV's dark teal (#1F4E5F) as the accent, on neutrals with a slight teal bias.
+// Type: Archivo (semi-condensed, like map labels) for headings, Source Sans 3 for text,
+// IBM Plex Mono for metadata (dates, places, tools).
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:ital,wght@0,300..800;1,300..800&display=swap');
+
+$jp-bg: #F6F8F8 !default;
+$jp-surface: #FFFFFF !default;
+$jp-fg: #16252B !default;
+$jp-muted: #50636A !default;
+$jp-accent: #1F4E5F !default;
+$jp-accent-hover: #2B6E82 !default;
+$jp-accent-soft: #E1ECEE !default;
+$jp-rule: #D6E1E3 !default;
+$jp-on-accent: #FFFFFF !default;
+
+$body-bg: $jp-bg !default;
+$body-color: $jp-fg !default;
+$primary: $jp-accent !default;
+$link-color: $jp-accent !default;
+$link-hover-color: $jp-accent-hover !default;
+$text-muted: $jp-muted !default;
+$border-color: $jp-rule !default;
+
+$navbar-bg: $jp-bg !default;
+$navbar-fg: $jp-fg !default;
+$navbar-hl: $jp-accent !default;
+$footer-bg: $jp-bg !default;
+$footer-fg: $jp-muted !default;
+
+$font-family-sans-serif: "Source Sans 3", "Source Sans Pro", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !default;
+$headings-font-family: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif !default;
+$headings-font-weight: 650 !default;
+$headings-color: $jp-fg !default;
+$font-size-root: 17px !default;
+$line-height-base: 1.6 !default;
+$h1-font-size: 2.35rem !default;
+$h2-font-size: 1.5rem !default;
+$h3-font-size: 1.15rem !default;
+
+/*-- scss:rules --*/
+:root {
+  --jp-bg: #{$jp-bg};
+  --jp-surface: #{$jp-surface};
+  --jp-fg: #{$jp-fg};
+  --jp-muted: #{$jp-muted};
+  --jp-accent: #{$jp-accent};
+  --jp-accent-hover: #{$jp-accent-hover};
+  --jp-accent-soft: #{$jp-accent-soft};
+  --jp-rule: #{$jp-rule};
+  --jp-on-accent: #{$jp-on-accent};
+  --jp-mono: #{$font-family-monospace};
+  --jp-head: #{$headings-font-family};
+}
+
+body { background: var(--jp-bg); color: var(--jp-fg); }
+
+h1, h2, h3, h4, .navbar-title, .title {
+  font-stretch: 87.5%;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+h2, h3, h4 { font-weight: 650; }
+h2 { margin-top: 2.2rem; padding-bottom: 0; border-bottom: none; }
+h3 { margin-top: 1.6rem; }
+p, li { text-wrap: pretty; }
+
+.navbar { border-bottom: 1px solid var(--jp-rule); }
+.navbar-title { font-family: var(--jp-head); font-weight: 700; }
+.nav-footer { border-top: 1px solid var(--jp-rule); font-size: 0.9rem; }
+
+a { text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--jp-accent); outline-offset: 2px; }
+
+// Small uppercase label used above headings and on cards
+.eyebrow, .feature p.eyebrow, .hero p.eyebrow {
+  font-family: var(--jp-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--jp-muted);
+  margin: 0 0 0.4rem;
+}
+
+// ---------- Home ----------
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 2.2rem 2.4rem;
+  margin-bottom: 1rem;
+  isolation: isolate;
+}
+// A 5 km-style hexagon grid, as used for sampling frames and AoK maps
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 45%;
+  z-index: -1;
+  background: var(--jp-accent);
+  opacity: 0.16;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0L34.64 10V30L17.32 40L0 30V10Z M17.32 40V60' fill='none' stroke='black' stroke-width='1'/%3E%3C/svg%3E"), radial-gradient(ellipse at 70% 45%, black 0%, transparent 70%);
+  -webkit-mask-composite: source-in;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.64' height='60' viewBox='0 0 34.64 60'%3E%3Cpath d='M17.32 0L34.64 10V30L17.32 40L0 30V10Z M17.32 40V60' fill='none' stroke='black' stroke-width='1'/%3E%3C/svg%3E"), radial-gradient(ellipse at 70% 45%, black 0%, transparent 70%);
+  mask-composite: intersect;
+  mask-size: 34.64px 60px, 100% 100%;
+  -webkit-mask-size: 34.64px 60px, 100% 100%;
+  pointer-events: none;
+}
+.hero h1 {
+  font-size: clamp(2.3rem, 6vw, 3.4rem);
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+}
+.hero .lead {
+  font-size: 1.28rem;
+  line-height: 1.45;
+  max-width: 34em;
+  color: var(--jp-fg);
+  margin-bottom: 1rem;
+}
+.hero p { max-width: 38em; }
+
+.button-row { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.4rem; }
+.btn-jp {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 4px;
+  border: 1px solid var(--jp-accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--jp-accent);
+  background: transparent;
+  transition: background-color .15s ease, color .15s ease;
+}
+.btn-jp:hover { background: var(--jp-accent-soft); color: var(--jp-accent); }
+.btn-jp.primary { background: var(--jp-accent); color: var(--jp-on-accent); }
+.btn-jp.primary:hover { background: var(--jp-accent-hover); border-color: var(--jp-accent-hover); color: var(--jp-on-accent); }
+
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 2.6rem; }
+.section-head h2 { margin: 0; }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+@media (max-width: 900px) { .feature-grid { grid-template-columns: 1fr; } }
+.feature {
+  display: flex; flex-direction: column;
+  background: var(--jp-surface);
+  border: 1px solid var(--jp-rule);
+  border-radius: 6px;
+  overflow: hidden;
+  min-width: 0;
+}
+.feature .thumb { display: block; aspect-ratio: 1200 / 627; overflow: hidden; border-bottom: 1px solid var(--jp-rule); background: var(--jp-accent-soft); }
+.feature .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; margin: 0; }
+.feature .body { display: flex; flex-direction: column; gap: 0.45rem; padding: 1rem 1.1rem 1.15rem; flex: 1; }
+.feature h3 { font-size: 1.14rem; line-height: 1.3; margin: 0; font-weight: 650; }
+.feature h3 a { color: var(--jp-fg); text-decoration: none; font-weight: inherit; }
+.feature h3 a:hover { color: var(--jp-accent); text-decoration: underline; }
+.feature p { margin: 0; font-size: 0.97rem; color: var(--jp-muted); }
+.feature .links { margin-top: auto; padding-top: 0.5rem; display: flex; gap: 1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.95rem; }
+
+// Experience list (home and about)
+.cv-list { list-style: none; padding: 0; margin: 1rem 0 0; border-top: 1px solid var(--jp-rule); }
+.cv-list li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--jp-rule);
+}
+.cv-list .when { font-family: var(--jp-mono); font-size: 0.82rem; color: var(--jp-muted); padding-top: 0.2rem; font-variant-numeric: tabular-nums; }
+.cv-list .what strong { font-weight: 650; }
+.cv-list .where { display: block; color: var(--jp-muted); font-size: 0.95rem; }
+@media (max-width: 560px) {
+  .cv-list li { grid-template-columns: 1fr; gap: 0.1rem; }
+}
+
+// ---------- Case studies ----------
+.dataplate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.9rem 1.5rem;
+  margin: 1.2rem 0 1.8rem;
+  padding: 1rem 1.1rem;
+  background: var(--jp-surface);
+  border: 1px solid var(--jp-rule);
+  border-radius: 6px;
+}
+.dataplate div { min-width: 0; }
+.dataplate dt, .dataplate .k {
+  font-family: var(--jp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--jp-muted);
+  font-weight: 500;
+}
+.dataplate dd, .dataplate .v { margin: 0.15rem 0 0; font-size: 0.97rem; line-height: 1.4; }
+
+.quarto-title .subtitle { color: var(--jp-muted); font-size: 1.1rem; }
+.figure, figure { margin-block: 1.6rem; }
+.figure-caption, figcaption { color: var(--jp-muted); font-size: 0.9rem; }
+.figure img, figure img { border: 1px solid var(--jp-rule); border-radius: 4px; }
+
+.callout-synthetic {
+  border-left: 3px solid var(--jp-accent);
+  background: var(--jp-accent-soft);
+  padding: 0.8rem 1rem;
+  border-radius: 0 4px 4px 0;
+  margin: 1.2rem 0;
+  font-size: 0.97rem;
+}
+.callout-synthetic p:last-child { margin-bottom: 0; }
+
+table { font-size: 0.95rem; }
+.table > :not(caption) > * > * { background: transparent; color: var(--jp-fg); border-color: var(--jp-rule); }
+th { font-family: var(--jp-mono); font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--jp-muted); font-weight: 500; }
+
+.next-link { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--jp-rule); display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-weight: 600; }
+
+// ---------- Published work and code ----------
+.output-list { list-style: none; padding: 0; margin: 0.6rem 0 0; border-top: 1px solid var(--jp-rule); }
+.output-list li { padding: 0.65rem 0; border-bottom: 1px solid var(--jp-rule); }
+.output-list a { font-weight: 600; }
+.output-list .meta { display: block; font-family: var(--jp-mono); font-size: 0.78rem; color: var(--jp-muted); margin-top: 0.15rem; }
+.output-list .note { display: block; font-size: 0.93rem; color: var(--jp-muted); }
+
+.repo-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
+@media (max-width: 760px) { .repo-list { grid-template-columns: 1fr; } }
+.repo {
+  background: var(--jp-surface);
+  border: 1px solid var(--jp-rule);
+  border-radius: 6px;
+  padding: 1rem 1.1rem;
+  min-width: 0;
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.repo h3 { margin: 0; font-family: var(--jp-mono); font-stretch: 100%; font-size: 1rem; font-weight: 500; letter-spacing: 0; }
+.repo p { margin: 0; font-size: 0.96rem; }
+.repo .links { margin-top: auto; padding-top: 0.3rem; display: flex; gap: 1rem; flex-wrap: wrap; font-weight: 600; font-size: 0.93rem; }
+.status {
+  align-self: flex-start;
+  font-family: var(--jp-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.45rem;
+  border-radius: 3px;
+  border: 1px solid var(--jp-rule);
+  color: var(--jp-muted);
+}
+.status.live { border-color: var(--jp-accent); color: var(--jp-accent); }
+
+.skills { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 0.5rem 1rem; margin: 1rem 0; }
+.skills dt { font-family: var(--jp-mono); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--jp-muted); font-weight: 500; padding-top: 0.2rem; }
+.skills dd { margin: 0; }
+@media (max-width: 560px) { .skills { grid-template-columns: 1fr; } .skills dd { margin-bottom: 0.5rem; } }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+// ---------- Stage 1 additions: facts, skills, Work listing ----------
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0.4rem 0 0.6rem;
+  border-top: 1px solid var(--jp-rule);
+  border-bottom: 1px solid var(--jp-rule);
+}
+.facts > div { padding: 0.85rem 1rem 0.9rem 0; min-width: 0; }
+.facts > div + div { padding-left: 1rem; border-left: 1px solid var(--jp-rule); }
+.facts dt { font-family: var(--jp-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--jp-muted); font-weight: 500; }
+.facts dd { margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4; }
+@media (max-width: 900px) {
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .facts > div:nth-child(3) { padding-left: 0; border-left: none; }
+  .facts > div:nth-child(n+3) { border-top: 1px solid var(--jp-rule); }
+}
+@media (max-width: 520px) {
+  .facts { grid-template-columns: 1fr; }
+  .facts > div, .facts > div + div { padding-left: 0; border-left: none; }
+  .facts > div + div { border-top: 1px solid var(--jp-rule); }
+}
+
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem 1.6rem;
+  margin-top: 1rem;
+}
+@media (max-width: 900px) { .skill-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .skill-groups { grid-template-columns: 1fr; } }
+.skill-groups section { min-width: 0; }
+.skill-groups h3 {
+  font-family: var(--jp-mono); font-stretch: 100%; font-size: 0.74rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--jp-muted);
+  margin: 0 0 0.55rem;
+}
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chips li {
+  font-size: 0.9rem; line-height: 1.2;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: var(--jp-accent-soft);
+  color: var(--jp-fg);
+}
+.plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.35rem; font-size: 0.95rem; }
+
+// Work listing (Quarto grid listing)
+.quarto-listing .quarto-grid-item.card {
+  background: var(--jp-surface);
+  border: 1px solid var(--jp-rule);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: none;
+  transition: border-color .15s ease;
+}
+.quarto-listing .quarto-grid-item.card:hover { border-color: var(--jp-accent); }
+.quarto-listing .quarto-grid-item .card-img-top { border-bottom: 1px solid var(--jp-rule); background: var(--jp-accent-soft); }
+.quarto-listing .quarto-grid-item .card-img-top img { object-fit: cover; object-position: top left; width: 100%; }
+.quarto-listing .quarto-grid-item .card-title { font-family: var(--jp-head); font-stretch: 87.5%; font-weight: 650; font-size: 1.05rem; line-height: 1.3; color: var(--jp-fg); }
+.quarto-listing .quarto-grid-item .card-text { font-size: 0.93rem; color: var(--jp-muted); }
+.quarto-listing .quarto-grid-item .listing-categories .listing-category,
+.quarto-listing-category .category {
+  font-family: var(--jp-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--jp-rule);
+  border-radius: 3px;
+  color: var(--jp-muted);
+  background: transparent;
+}
+.quarto-listing-category .category { display: inline-block; margin: 0 0.35rem 0.4rem 0; padding: 0.25rem 0.55rem; cursor: pointer; }
+.quarto-listing-category .category.active { border-color: var(--jp-accent); color: var(--jp-accent); background: var(--jp-accent-soft); }
+.quarto-listing-category-title { font-family: var(--jp-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--jp-muted); }
+
+// Type filter (replaces Quarto's margin category list, which is hidden on phones)
+#quarto-margin-sidebar .quarto-listing-category, #quarto-margin-sidebar .quarto-listing-category-title { display: none; }
+.type-filter { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.2rem 0 1.4rem; }
+.type-filter button {
+  font: inherit; font-size: 0.92rem; font-weight: 600;
+  padding: 0.38rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--jp-rule);
+  background: var(--jp-surface);
+  color: var(--jp-fg);
+  cursor: pointer;
+}
+.type-filter button:hover { border-color: var(--jp-accent); }
+.type-filter button[aria-pressed="true"] { background: var(--jp-accent); border-color: var(--jp-accent); color: var(--jp-on-accent); }
+.feature p.eyebrow { font-size: 0.7rem; }
+.small-note { margin-top: 1.6rem; font-size: 0.9rem; color: var(--jp-muted); }
+// Work grid: show whole thumbnails (no cropping) and keep the page to a readable width
+.quarto-listing .quarto-grid-item img.card-img { height: auto !important; aspect-ratio: 1200 / 627; width: 100%; object-fit: cover; object-position: top left; }
+.page-work main.content { max-width: 1100px; width: 100%; justify-self: center; margin-inline: auto; }
+.quarto-listing .quarto-grid-item .card-subtitle { font-family: var(--jp-mono); font-size: 0.74rem; letter-spacing: 0.02em; color: var(--jp-muted); margin-top: 0.15rem; }
+
+// Photo: context photo in the right margin on desktop, round face crop on phones
+.hero-photo { margin-top: 2.6rem; }
+.hero-photo img { width: 100%; height: auto; display: block; border-radius: 6px; border: 1px solid var(--jp-rule); }
+.hero-photo figcaption, .hero-photo .figure-caption, .about-photo figcaption { font-size: 0.8rem; line-height: 1.35; color: var(--jp-muted); margin-top: 0.45rem; }
+.hero-avatar { display: none; width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin: 0 0 0.9rem; box-shadow: 0 0 0 1px var(--jp-rule); }
+@media (max-width: 991.98px) {
+  .hero-photo, .column-margin.hero-photo, div.hero-photo { display: none !important; }
+  .hero-avatar { display: block; }
+}
+.about-photo { float: right; width: 230px; margin: 0.35rem 0 1rem 1.8rem; }
+.about-photo img { width: 100%; height: auto; display: block; border-radius: 6px; border: 1px solid var(--jp-rule); }
+@media (max-width: 640px) { .about-photo { float: none; width: 100%; max-width: 300px; margin: 0 0 1.2rem; } }
