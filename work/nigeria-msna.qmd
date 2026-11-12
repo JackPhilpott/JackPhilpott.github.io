@@ -26,7 +26,7 @@ A Multi-Sector Needs Assessment (MSNA) is a large household survey whose finding
 
 ## Outcome
 
-- Findings presented to Nigeria's Cadre Harmonisé food security analysis, and being presented to partners, donors, clusters and agency heads.
+- Findings presented to Nigeria's Cadre Harmonisé food security analysis, to 30+ partner organisations in a half-day workshop, and to donors (November 2026).
 - Each stage rebuilt as a public, runnable repository on synthetic data, so the methods can be seen without exposing survey data.
 
 ![The monitoring dashboard's progress page, as used on the real survey, running on synthetic data.](../images/dashboard_progress.webp){loading="lazy" fig-alt="Dashboard page with progress totals, a daily submissions chart and progress by region and partner. Synthetic data."}
